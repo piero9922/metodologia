@@ -1,0 +1,42 @@
+.container-articles{
+    h2{
+        color: $color-primary;
+        text-transform: uppercase;
+        font-size: $size-s;
+        margin: 40px 0;
+    }
+
+    .articles{
+        display: flex;
+        padding: 10px 0;
+    
+        &-text-3{
+            padding: 0 10px;
+            h3{
+                color: $color-primary;
+                margin-top: 0;
+            }
+            p{
+                line-height: 25px;
+            }
+        }
+        &-comet-2{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 25px;
+            
+            span{
+                color: $color-primary;
+            }
+            p{
+                color: $color-primary;
+                opacity: 70%;
+                margin: 0;
+            }
+            a{
+                margin: 0 10px;
+            }
+        }
+    }
+}

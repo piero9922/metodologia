@@ -1,0 +1,54 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    &__logo{
+        display: flex;
+        position: relative;
+    }
+        
+    &__logo1{
+        width: 30px;
+        height: 30px;
+        background: $bg;
+        border-radius: 50%;
+        position: relative;
+    }
+    span{
+        border: 1px solid blue;
+        font-size: $size-s;
+        border-radius: 50%;
+        height: $height-t;
+        width: $width-s;
+        position: relative;
+        left: -10px;
+        top: 2px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__container{
+        padding: 0 10px;
+
+        & li{
+            list-style: none;
+        }
+        & a{
+            text-decoration: none;
+            margin: 0 20px;
+            color: $color-secundary;
+
+            &:hover{
+                color: white;
+                background: skyblue;
+                border-radius: 10px;
+                padding: 5px 15px;
+                transition: 0.5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.container-popular{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px 0;
+
+
+        & .principal{
+            width: 100%;
+        }
+        h2{
+            color: $color-primary;
+        }
+        p{
+            line-height: 30px;
+            font-size: $size-s;
+        }
+        
+    .container-text2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            color: $color-primary;
+        }
+        p{
+            color: $color-primary;
+            opacity: 70%;
+            margin: 0;
+        }
+        a{
+            margin: 0 10px;
+        }
+    }
+}
+
+.line{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}

@@ -1,0 +1,37 @@
+.popular__item{
+    h3{
+        color: $color-primary;
+        font-size: $size-s;
+    }
+    .popular__text{
+        display: flex;
+        
+        .popular__text1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            h1{
+                font-size: $size-h1;
+                margin-top: 0;
+            }
+            p{
+                line-height: 30px;
+                margin: 20px 0;
+            }
+
+            .popular__coment{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p{ 
+                    margin: 0;
+                }
+                a{
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
