@@ -1,0 +1,213 @@
+// @mixin mobile{
+//     @media screen and (min-width: 320px){
+//         @content;
+//     }
+// }
+// @mixin tablets{
+//     @media screen and (min-width: 479px){
+//         @content;
+//     }
+// }
+// @mixin ipad{
+//     @media screen and (min-width: 767px){
+//         @content;
+//     }
+// }
+// @mixin desktop{
+//     @media screen and (min-width: 1024px){
+//         @content;
+//     }
+// }
+
+@media screen and (min-width: 319px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        &__logo{
+            left: 10px;
+        }
+        span{
+            height: 25px;
+            width: 25px;
+            left: -20px;
+        }
+        &__container{
+            ul{
+                padding: 0;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                a{
+                  margin: 10px 0;  
+                }
+            }
+        }
+    }
+}
+    .container-section{
+        padding: 0;
+    }
+    .popular__item{
+        h3{
+            padding-left: 20px;
+        }
+        .popular__text{
+            flex-direction: column;
+            padding: 0 20px;
+            .popular__text1{
+                h1{
+                    font-size: 1.3rem;
+                }
+                p{
+                    line-height: 1.5rem;
+                    font-size: 0.9rem;
+                }
+                
+            }
+        }
+    }
+    .line{
+        padding-right: 20px;
+    }
+    .container-popular{
+        grid-template-rows: repeat(3, 1fr);
+        padding: 10px 20px;
+
+        .container-popular2:nth-child(1){
+            grid-row: 1;
+            grid-column: 1/span 3;
+        }
+        .container-popular2:nth-child(2){
+            grid-row: 2;
+            grid-column: 1/span 3;
+        }
+        .container-popular2:nth-child(3){
+            grid-row: 3;
+            grid-column: 1/span 3;
+        }
+    }
+
+    .container-articles{
+        padding: 0 20px;
+
+        .articles{
+            flex-direction: column;
+            &-text-3{
+                padding: 10px 0;
+            }
+        }
+    }
+    .team{
+        margin: 0;
+        border-radius: 0px 150px 0px 0px;
+    
+        &__1{
+            flex-direction: column;
+            form{
+                margin-top: 10px;
+            }
+        }
+        .social{
+            grid-template-rows: repeat(3, 1fr);
+            border: 1px solid grey;
+            text-align: center;
+            &__container{
+                grid-row: 1;
+                grid-column: 1/span 3;
+                border: 1px solid grey;
+    
+            }
+            &__logo3{
+                grid-row: 2;
+                grid-column: 1/span 3;
+                border: 1px solid grey;
+    
+            }
+            &__logo4{
+                grid-row: 3;
+                grid-column: 1/span 3;
+                border: 1px solid grey;
+    
+            }
+        }
+    }
+
+
+@media screen and (min-width: 479px){
+    .menu{
+        flex-direction: row;
+        &__container{
+            ul{
+                li{
+                    flex-direction: row;
+                    a{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 767px){
+    .popular__item{
+        .popular__text{
+            flex-direction: initial;
+        }
+    }
+    .container-popular{
+        grid-template-rows: initial;
+        .container-popular2:nth-child(1){
+            grid-row: initial;
+            grid-column: initial;
+        }
+        .container-popular2:nth-child(2){
+            grid-row: initial;
+            grid-column: initial;
+        }
+        .container-popular2:nth-child(3){
+            grid-row: initial;
+            grid-column: initial;
+        }
+    }
+        .container-articles{
+            .articles{
+            flex-direction: initial;
+            }
+
+    }   
+
+    .team{
+        &__1{
+            flex-direction: initial;
+        }
+        
+        .social{
+            grid-template-rows: initial;
+            
+            &__container{
+                grid-row: initial;
+                grid-column: initial;
+                border: none;
+            }
+            &__logo3{
+                grid-row: initial;
+                grid-column: initial;
+                border: none;
+            }
+            &__logo4{
+                grid-row: initial;
+                grid-column: initial;
+                border: none;
+            }
+        }   
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container-section{
+        padding: 0 100px;
+    }
+}
